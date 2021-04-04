@@ -167,7 +167,7 @@ public class Main {
 		
 		// reads driver.txt
 		try {
-			File driversText = new File("drivers", "drivers.txt");
+			File driversText = new File("drivers", "driver-info.txt");
 			Scanner textScanner = new Scanner(driversText);
 			
 			while(textScanner.hasNext()) {
@@ -186,7 +186,7 @@ public class Main {
 			textScanner.close();
 		}
 		catch (Exception e){
-			System.out.println("Cant read drivers.txt");
+			System.out.println("Cant read driver-info.txt");
 		}
 		
 		
@@ -308,7 +308,7 @@ public class Main {
 		
 		// reads the drivers file and saves each line to an array
 		try {
-			File driversTextFile = new File("drivers", "drivers.txt");
+			File driversTextFile = new File("drivers", "driver-info.txt");
 			Scanner sc = new Scanner(driversTextFile);
 			
 			while(sc.hasNext()){
@@ -317,7 +317,7 @@ public class Main {
 			sc.close();
 		}
 		catch (Exception e) {
-			System.out.println("Cant read drivers.txt");
+			System.out.println("Cant read driver-info.txt");
 		}
 		
 		// saves the index of the element in the array that matches the driver info passed into this function
@@ -333,7 +333,7 @@ public class Main {
 		
 		// rewrites the drivers file with the updated info
 		try {
-			File driversTextFile = new File("drivers", "drivers.txt");
+			File driversTextFile = new File("drivers", "driver-info.txt");
 			FileWriter fw = new FileWriter(driversTextFile);
 			PrintWriter pw = new PrintWriter(fw);
 			
@@ -344,7 +344,7 @@ public class Main {
 			pw.close();
 		}
 		catch (Exception e) {
-			System.out.println("cannot read/write to drivers.txt");
+			System.out.println("cannot read/write to driver-info.txt");
 		}
 		
 		
